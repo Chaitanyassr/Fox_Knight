@@ -7,14 +7,14 @@ require('chai')
     let Social
 
 before(async () => {
-	Social = await Social.deployed()
+	social = await Social.deployed()
 })
 
     describe('deployment', async () => {
 it('deploys successfully', async () => {
 
 
-	const address = await Social.address
+	const address = await social.address
 	assert.notEqual(address, 0x0)
 	assert.notEqual(address, '')
 	assert.notEqual(address, null)
