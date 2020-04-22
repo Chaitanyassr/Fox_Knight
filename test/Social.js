@@ -4,5 +4,12 @@ require('chai')
  .should()
 
  contract('Social' , (accounts) => {
+    let Social
 
+    describe('deployment', () => {
+it('deploys successfully', () => {
+
+	
+})
+    })
  })
