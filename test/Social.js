@@ -6,6 +6,10 @@ require('chai')
  contract('Social' , (accounts) => {
     let Social
 
+before(async () => {
+	Social = await Social.deployed()
+})
+
     describe('deployment', async () => {
 it('deploys successfully', async () => {
 
@@ -15,6 +19,10 @@ it('deploys successfully', async () => {
 	assert.notEqual(address, '')
 	assert.notEqual(address, null)
 	assert.notEqual(address, undefined)
+})
+it('has a name', async () => {
+	const name = await Social.name()
+	assert.equal(name, 'Fox_Knight')
 })
     })
  })
