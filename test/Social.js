@@ -1,0 +1,1 @@
+const Social = artifacts.require("./Social.sol");
