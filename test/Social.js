@@ -13,7 +13,7 @@ before(async () => {
     describe('deployment', async () => {
 it('deploys successfully', async () => {
 
-	Social = await Social.deployed()
+
 	const address = await Social.address
 	assert.notEqual(address, 0x0)
 	assert.notEqual(address, '')
